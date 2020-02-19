@@ -12,17 +12,18 @@ public class Main {
 //        Students students = new Students(classRoom);
 //        students.getHighesGrade();
         List<Comunity> person = new ArrayList<>();
-        List<Person> personList = new ArrayList<>();
-        personList.add(new Person("Ana",4,"Verde"));
-        personList.add(new Person("Adi",5,"Verde"));
-        personList.add(new Person("Popescu",6,"Rosu"));
-        personList.add(new Person("Mirela",7,"Verde"));
+        List<Employee> personList = new ArrayList<>();
+        personList.add(new Employee("Ana",4,"Verde",140,"A"));
+        personList.add(new Employee("Adi",5,"Verde",130,"B"));
+        personList.add(new Employee("Popescu",6,"Rosu",100,"A"));
+        personList.add(new Employee("Mirela",7,"Verde",1000,"D"));
+        Company company = new Company(personList);
+//        person.add(new Comunity(personList));
 
-        person.add(new Comunity(personList));
 
-        for (Comunity subject:person) {
-            System.out.println(subject.getColourHair());
-        }
+           System.out.println(company.goodSalary(100));
+
+
 
     }
 }
