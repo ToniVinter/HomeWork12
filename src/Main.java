@@ -11,15 +11,18 @@ public class Main {
 //        classRoom.put(7,"Popescu");
 //        Students students = new Students(classRoom);
 //        students.getHighesGrade();
-        List<Person> person = new ArrayList<>();
-        person.add(new Person("Ana",3,"Verde"));
-        person.add(new Person("Adi",4,"Verde"));
-        person.add(new Person("Popescu",5,"Verde"));
-//        System.out.println(person.toString());
+        List<Comunity> person = new ArrayList<>();
+        List<Person> personList = new ArrayList<>();
+        personList.add(new Person("Ana",4,"Verde"));
+        personList.add(new Person("Adi",5,"Verde"));
+        personList.add(new Person("Popescu",6,"Rosu"));
+        personList.add(new Person("Mirela",7,"Verde"));
 
-        for (Person temp : person) {
-            System.out.println(temp.getColourHair(person));
+        person.add(new Comunity(personList));
 
+        for (Comunity subject:person) {
+            System.out.println(subject.getColourHair());
         }
+
     }
 }
