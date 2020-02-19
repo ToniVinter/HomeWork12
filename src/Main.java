@@ -15,14 +15,14 @@ public class Main {
         List<Employee> personList = new ArrayList<>();
         personList.add(new Employee("Ana",4,"Verde",140,"A"));
         personList.add(new Employee("Adi",5,"Verde",130,"B"));
-        personList.add(new Employee("Popescu",6,"Rosu",100,"A"));
+        personList.add(new Employee("Popescu",6,"Rosu",10000,"A"));
         personList.add(new Employee("Mirela",7,"Verde",1000,"D"));
         Company company = new Company(personList);
 //        person.add(new Comunity(personList));
 
 
            System.out.println(company.goodSalary(100));
-
+        System.out.println(company.bestCompany());
 
 
     }

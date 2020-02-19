@@ -31,6 +31,18 @@ public class Company {
 
         return persons;
     }
-    
+
+    public String bestCompany(){
+        Employee theBestSalary = null;
+        int maxSalary = 0;
+        for(Employee subject: employee){
+            if(maxSalary < subject.getSalary()){
+                theBestSalary = subject;
+                maxSalary = subject.getSalary();
+            }
+        }
+        return "The best company is: " + theBestSalary.getCompany();
+    }
+
 
 }
